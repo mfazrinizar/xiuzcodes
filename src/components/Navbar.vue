@@ -16,7 +16,7 @@
         </div>
       </div>
       <div
-        :class="isOpen ? 'visible' : 'invisible'"
+        :class="isOpen ? 'block' : 'hidden'"
         class="z-10 w-full h-screen bg-gray-100 text-gray-800 flex flex-col items-center justify-center md:pr-12 md:block md:h-auto md:text-right dark:bg-gray-800 dark:text-gray-100"
       >
         <router-link @click="isOpen = false" to="/" class="px-2"

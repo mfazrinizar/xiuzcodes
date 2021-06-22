@@ -1,11 +1,13 @@
 <template>
-  <Navbar class="font-mono bg-gray-100 dark:bg-gray-800" />
-  <div
-    class="font-mono text-gray-800 bg-gray-100 dark:bg-gray-800 dark:text-gray-800"
-  >
-    <router-view />
-  </div>
-  <Footer />
+  <main class="font-mono text-gray-800 bg-gray-100 dark:bg-gray-800 dark:text-gray-800">
+    <Navbar class="font-mono bg-gray-100 dark:bg-gray-800" />
+    <div
+      class="container mx-auto md:p-8"
+    >
+      <router-view />
+    </div>
+    <Footer />
+  </main>
 </template>
 
 <script>
