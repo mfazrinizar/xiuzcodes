@@ -9,7 +9,7 @@
         <p class="my-8">I have experience but i'm not expert</p>
         <div class="w-11/12 flex flex-wrap mx-auto justify-center">
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500">
+            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700">
               <svg
                 class="w-24 h-24 mx-auto"
                 viewBox="0 0 256 255"
@@ -51,7 +51,7 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500">
+            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700">
               <svg
                 class="w-24 h-24 mx-auto"
                 viewBox="0 0 256 256"
@@ -67,13 +67,13 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500">
+            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700">
               <img class="w-24 h-24 mx-auto" src="../assets/nodejs.svg" alt="nodejs logo" />
               <h3 class="font-semibold text-lg my-4">NodeJS</h3>
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500">
+            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700">
               <svg
                 class="w-24 h-24 mx-auto"
                 viewBox="0 -17.5 256 256"
@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="w-1/2 px-4 py-2">
-            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500">
+            <div class="px-4 pt-8 shadow-md bg-gray-50 rounded border border-indigo-500 dark:bg-gray-700">
               <svg
                 class="w-24 h-24 mx-auto"
                 preserveAspectRatio="xMidYMid"
