@@ -22,17 +22,11 @@
         <router-link @click="isOpen = false" to="/" class="px-2"
           >Home</router-link
         >
-        <router-link @click="isOpen = false" to="/todo" class="px-2"
-          >Todo</router-link
-        >
         <router-link @click="isOpen = false" to="/about" class="px-2"
           >About</router-link
         >
         <router-link @click="isOpen = false" to="/skills" class="px-2"
           >Skills</router-link
-        >
-        <router-link @click="isOpen = false" to="/Projects" class="px-2"
-          >Projects</router-link
         >
       </div>
     </div>

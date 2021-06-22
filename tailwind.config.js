@@ -11,7 +11,7 @@ module.exports = {
         gray: colors.coolGray,
       },
       fontFamily: {
-        mono: ['Montserrat', 'sans-serif'],
+        mono: ['Asap', 'sans-serif'],
       },
     },
   },
