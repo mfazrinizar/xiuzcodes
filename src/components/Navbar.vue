@@ -2,7 +2,7 @@
   <nav class="w-full h-10 navbar text-white">
     <div class="py-2 flex flex-col md:flex-row justify-between">
       <div class="px-2 flex justify-between items-center">
-        <div class="w-full flex items-center justify-end w-16">
+        <div class="w-full flex items-center justify-end">
           <Toggle class="mx-6" />
           <div
             @click="toggle"
@@ -25,29 +25,26 @@
         <router-link @click="isOpen = false" to="/about" class="px-2"
           >About</router-link
         >
-        <router-link @click="isOpen = false" to="/skills" class="px-2"
-          >Skills</router-link
-        >
       </div>
     </div>
   </nav>
 </template>
 <script>
-import Toggle from './DarkModeToggle.vue';
+import Toggle from './DarkModeToggle.vue'
 
 export default {
   components: {
     Toggle,
   },
   data() {
-    return { isOpen: false };
+    return { isOpen: false }
   },
   methods: {
     toggle() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen
     },
   },
-};
+}
 </script>
 <style scoped>
 .btn {
