@@ -1,31 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import Todo from '../views/Todo.vue';
-import PageNotFound from '../views/404.vue';
-import Skills from '../views/Skills.vue';
-import Projects from '../views/Projects.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
+import PageNotFound from '../views/404.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
-  },
-  {
-    path: '/projects',
-    name: 'Projects',
-    component: Projects,
-  },
-  {
-    path: '/skills',
-    name: 'Skills',
-    component: Skills,
-  },
-  {
-    path: '/todo',
-    name: 'Todo',
-    component: Todo,
-    props: (route) => ({ name: route.query.name }),
   },
   {
     path: '/about',
@@ -40,11 +21,11 @@ const routes = [
     name: 'Not Found',
     component: PageNotFound,
   },
-];
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+})
 
-export default router;
+export default router
