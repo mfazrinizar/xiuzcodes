@@ -13,7 +13,7 @@
             A team
           </p>
           <div class="p-8 mt-4">
-            <a href="https://github.com/asmin-dev" target="_blank">
+            <a href="https://github.com/xiuzcode" target="_blank">
               <svg
                 class="w-8 h-8 mx-auto"
                 viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ import anime from 'animejs'
 export default {
   name: 'Home',
   mounted() {
-    document.querySelector('title').innerText = 'Asmin portofolio'
+    document.querySelector('title').innerText = 'Xiuz Code'
     anime({
       targets: '.tr',
       translateX: 30,

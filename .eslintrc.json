@@ -15,7 +15,7 @@
     "max-len": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "vue/no-multiple-template-root": "off",
-    "semi": ["error","never"],
+    "semi": ["never"],
     "import/extensions": [
       "error",
       "always",

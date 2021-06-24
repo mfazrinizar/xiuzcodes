@@ -23,28 +23,28 @@
   </div>
 </template>
 <script>
-const moment = require('moment');
-const { ref, onMounted } = require('vue');
+const moment = require('moment')
+const { ref, onMounted } = require('vue')
 
 export default {
   props: { msg: String },
   setup() {
-    const theme = ref(localStorage.getItem('theme') ?? 'light');
-    const time = ref(moment().format(moment.HTML5_FMT.TIME_SECONDS));
+    const theme = ref(localStorage.getItem('theme') ?? 'light')
+    const time = ref(moment().format(moment.HTML5_FMT.TIME_SECONDS))
     setInterval(() => {
-      time.value = moment().format(moment.HTML5_FMT.TIME_SECONDS);
-    }, 1000);
+      time.value = moment().format(moment.HTML5_FMT.TIME_SECONDS)
+    }, 1000)
     const selectTheme = (value) => {
-      theme.value = value;
-      localStorage.setItem('theme', value);
-      const root = document.querySelector('html').classList;
-      root.add(localStorage.getItem('theme'));
+      theme.value = value
+      localStorage.setItem('theme', value)
+      const root = document.querySelector('html').classList
+      root.add(localStorage.getItem('theme'))
       if (value === 'dark') {
-        root.remove('light');
+        root.remove('light')
       } else {
-        root.remove('dark');
+        root.remove('dark')
       }
-    };
+    }
     const mount = () => {
       // ketika sistem browser dalam keadaan darkmode ataupun localStorage.theme === dark
       if (
@@ -52,18 +52,18 @@ export default {
         || (localStorage.getItem('theme')
           && window.matchMedia('(prefers-color-scheme: dark)').matches)
       ) {
-        document.querySelector('html').classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-        theme.value = localStorage.getItem('theme');
+        document.querySelector('html').classList.add('dark')
+        localStorage.setItem('theme', 'dark')
+        theme.value = localStorage.getItem('theme')
       } else {
-        localStorage.setItem('theme', 'light');
-        document.querySelector('html').classList.add('light');
+        localStorage.setItem('theme', 'light')
+        document.querySelector('html').classList.add('light')
       }
-    };
+    }
     onMounted(() => {
-      mount();
-    });
-    return { theme, time, selectTheme };
+      mount()
+    })
+    return { theme, time, selectTheme }
   },
-};
+}
 </script>
