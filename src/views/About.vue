@@ -5,7 +5,7 @@
     <div class="w-full h-full flex items-center justify-center">
       <div class="w-11/12">
         <p class="font-sans text-sm leading-5 tracking-wide">
-          Xiuz
+          Welcome to the About page of Xiuz.Codes
         </p>
       </div>
     </div>
